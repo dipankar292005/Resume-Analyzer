@@ -1,3 +1,1 @@
-📌 Resume-Ready Project Description (Short + Professional)
-
 AI Resume Analyzer Web App — Built a fully responsive and animated web application that analyzes uploaded resumes using JavaScript. Implemented ATS scoring, readability checks, action-verb detection, and personalized improvement suggestions with a clean, modern UI and smooth interactive animations.
