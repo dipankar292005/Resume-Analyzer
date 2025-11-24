@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Checker - Analyze & Optimize Your Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">📄</span>
+                <span class="logo-text">ResumAI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#checker" class="nav-link">Checker</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="word">Transform</span>
+                    <span class="word">Your</span>
+                    <span class="word">Resume</span>
+                </h1>
+                <p class="hero-subtitle">AI-powered analysis to create a resume that stands out</p>
+                <button class="cta-button">Start Checking Now</button>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div class="card-icon">✓</div>
+                        <p>AI Analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why Use ResumAI?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Deep Analysis</h3>
+                <p>Advanced AI examines every aspect of your resume with intelligent pattern recognition</p>
+                <div class="feature-bar"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Feedback</h3>
+                <p>Get real-time suggestions to improve your content, formatting, and keywords</p>
+                <div class="feature-bar"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Score & Metrics</h3>
+                <p>Receive detailed scores on ATS compatibility, readability, and impact</p>
+                <div class="feature-bar"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Smart Suggestions</h3>
+                <p>Get personalized recommendations based on your industry and experience level</p>
+                <div class="feature-bar"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>ATS Optimized</h3>
+                <p>Ensure your resume passes through Applicant Tracking Systems successfully</p>
+                <div class="feature-bar"></div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Career Boost</h3>
+                <p>Increase your chances of landing interviews with data-driven insights</p>
+                <div class="feature-bar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Checker Section -->
+    <section id="checker" class="checker">
+        <div class="checker-container">
+            <h2>Check Your Resume</h2>
+            <div class="checker-content">
+                <div class="upload-area">
+                    <div class="upload-box" id="uploadBox">
+                        <div class="upload-icon">📤</div>
+                        <h3>Upload Your Resume</h3>
+                        <p>Drag and drop or click to upload</p>
+                        <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt" style="display: none;">
+                    </div>
+                    <div id="fileStatus" class="file-status"></div>
+                </div>
+                <div class="analysis-panel">
+                    <h3>Analysis Results</h3>
+                    <div class="score-display" id="scoreDisplay">
+                        <div class="score-circle">
+                            <div class="score-value" id="scoreValue">--</div>
+                            <div class="score-label">Overall Score</div>
+                        </div>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric" id="metric1">
+                            <div class="metric-label">Readability</div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 0%"></div>
+                            </div>
+                            <div class="metric-value">0%</div>
+                        </div>
+                        <div class="metric" id="metric2">
+                            <div class="metric-label">ATS Score</div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 0%"></div>
+                            </div>
+                            <div class="metric-value">0%</div>
+                        </div>
+                        <div class="metric" id="metric3">
+                            <div class="metric-label">Impact</div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 0%"></div>
+                            </div>
+                            <div class="metric-value">0%</div>
+                        </div>
+                    </div>
+                    <div class="suggestions">
+                        <h4>💡 Personalized Suggestions & Improvements</h4>
+                        <div id="suggestionsList" class="suggestions-content">
+                            <p class="placeholder-text">Upload your resume to get AI-powered personalized suggestions to improve it</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About ResumAI</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>ResumAI is powered by cutting-edge artificial intelligence technology designed specifically for resume optimization. We help thousands of job seekers improve their resumes and land their dream jobs.</p>
+                <p>Our AI analyzes industry best practices, ATS requirements, and hiring trends to provide you with actionable insights that make a real difference.</p>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">50K+</div>
+                    <p>Resumes Checked</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">85%</div>
+                    <p>Interview Rate</p>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.9/5</div>
+                    <p>User Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 ResumAI. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
